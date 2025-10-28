@@ -6,7 +6,7 @@ export default function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/my-projects-hub/" element={<Home />} />
                 <Route path="/game2048" element={<Game2048 />} />
             </Routes>
         </Router>
