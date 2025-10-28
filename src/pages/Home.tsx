@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom"
 
 export default function Home() {
-    const projects = [{ name: "2048 Game", path: "/game2048" }]
+    const projects = [
+        { name: "2048 Game", path: "/game2048" },
+        { name: "Weather App", path: "/weatherApp" }
+    ]
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-amber-100 to-amber-200 dark:from-slate-800 dark:to-slate-900 text-center p-6">
