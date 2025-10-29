@@ -15,8 +15,8 @@ export default function Home() {
             <Header />
             <Flex direction="column" gap="2" width="200px" m="auto">
                 {projects.map((p) => (
-                    <Button size="3" asChild>
-                        <Link key={p.path} to={p.path}>
+                    <Button key={p.path} size="3" asChild>
+                        <Link to={p.path}>
                             {p.iconComponent}
                             {p.name}
                         </Link>
