@@ -1,4 +1,4 @@
-import { Flex, Text, Button, Heading, Box } from "@radix-ui/themes"
+import { Flex, Button, Heading, Container } from "@radix-ui/themes"
 import { MdPets } from "react-icons/md"
 import { FaGamepad } from "react-icons/fa"
 import { SiAccuweather } from "react-icons/si"
@@ -11,19 +11,21 @@ export default function Home() {
     ]
 
     return (
-        <Flex direction="column" gap="2" mt="4">
-            <Flex justify="center" gap="2">
+        <Container size="1">
+            <Flex justify="center" gap="2" mt="4" mb="4">
                 <MdPets size="24" color="#0090FF" />
                 <Heading mb="2">My Pet Projects</Heading>
             </Flex>
-            {projects.map((p) => (
-                <Link key={p.path} to={p.path}>
-                    <Button size="3">
-                        {p.iconComponent}
-                        {p.name}
+            <Flex direction="column" gap="2" width="200px" m="auto">
+                {projects.map((p) => (
+                    <Button size="3" asChild>
+                        <Link key={p.path} to={p.path}>
+                            {p.iconComponent}
+                            {p.name}
+                        </Link>
                     </Button>
-                </Link>
-            ))}
-        </Flex>
+                ))}
+            </Flex>
+        </Container>
     )
 }
