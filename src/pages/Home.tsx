@@ -6,8 +6,8 @@ import Header from "../components/Header"
 
 export default function Home() {
     const projects = [
-        { name: "2048 Game", path: "/game2048", iconComponent: <FaGamepad /> },
-        { name: "Weather App", path: "/weatherApp", iconComponent: <SiAccuweather /> }
+        { name: "2048 Game", path: "/my-projects-hub/game2048", iconComponent: <FaGamepad /> },
+        { name: "Weather App", path: "/my-projects-hub/weatherApp", iconComponent: <SiAccuweather /> }
     ]
 
     return (

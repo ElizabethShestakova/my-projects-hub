@@ -8,9 +8,9 @@ export default function App() {
     return (
         <Router>
             <Routes>
-                <Route path="/my-projects-hub/" element={<Home />} />
-                <Route path="/game2048" element={<Game2048 />} />
-                <Route path="/weatherApp" element={<WeatherApp />} />
+                <Route path="/my-projects-hub" element={<Home />} />
+                <Route path="/my-projects-hub/game2048" element={<Game2048 />} />
+                <Route path="/my-projects-hub/weatherApp" element={<WeatherApp />} />
             </Routes>
             <HomeButton />
         </Router>

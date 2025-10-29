@@ -1,10 +1,10 @@
 import { Button } from "@radix-ui/themes"
 import { TbHomeFilled } from "react-icons/tb"
-import { Link, useLocation } from "react-router-dom"
+import { Link } from "react-router-dom"
+import { useIsHomePage } from "../hooks/useIsHomePage"
 
 export default function HomeButton() {
-    const location = useLocation()
-    const isHomePage = location.pathname.includes("my-projects-hub")
+    const { isHomePage } = useIsHomePage()
 
     if (isHomePage) {
         return null
